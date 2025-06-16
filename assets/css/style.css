@@ -198,18 +198,19 @@ main {
 }
 
 .imagem-texto {
-    margin-left: 200px;
-    display: flex; /* Alinha o texto e a imagem lado a lado */
-    justify-content: space-between; /* Adiciona espaço entre o texto e a imagem */
-    align-items: center; /* Centraliza verticalmente os elementos */
-    gap: 20px; /* Espaçamento entre o texto e a imagem */
+    margin-top: 20vh;
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    gap: 20px;
+    padding: 15vh 1vh 0 0;
 }
 
 .texto{
     color: white;
     margin-right: 300px;
-    flex: 1; /* O texto ocupa o espaço restante */
-    max-width: 500px; /* Define uma largura máxima para o texto */
+    flex: 1;
+    max-width: 500px; 
 }
 
 .texto b{
@@ -225,6 +226,7 @@ main {
 /* SESSAO */
 
 .Qualidades{
+  margin-top: 25vh;
     padding: 150px;
 }
 
@@ -314,7 +316,6 @@ main {
     gap: 50px;
 }
 .card-comum{
-    height: auto;
     width: 260px;
     border-radius: 20px;
     border: solid 0.5px;
@@ -323,6 +324,17 @@ main {
     text-align: center;
     transition: transform 0.3s;
 }
+
+#c1{
+margin: 9vh 0 39vh 0;
+} 
+#c2{
+margin: 9vh 0 0 0;
+} 
+#c3{
+margin: 9vh 0 24vh 0;
+} 
+
 .card-comum ul{
     list-style: none;
     color: white;
@@ -390,13 +402,54 @@ button:hover{
     transform:scale(1.105);
 }
 
+
+.plano-beneficios {
+    list-style: none;
+    padding: 0;
+}
+
+.plano-beneficios li {
+    margin-bottom: 10px;
+    position: relative;
+    padding-left: 20px;
+    color: #cfcfcf;
+    font-size: 14px;
+}
+
+
+.plano-beneficios li::before {
+    content: '✔';
+    color: #00aaff;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+/* Título */
+.plano-titulo {
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+}
+
+/* Preço */
+.plano-preco {
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+}
+
+/* Descrição */
+.plano-descricao {
+    font-size: 14px;
+    color: #cfcfcf;
+}
+
+
 /* card popular */
 
 .secao-popular{
     height: 400px;
-}
-.cards .card-comum{
-    margin-top: 27px;
 }
 
 .card-popular-cola{
@@ -784,14 +837,7 @@ p {
     transform: scale(1.05);
   }
   
-
-
 /* Responsividade Geral */
-
-
-/* --- Garanta isto no topo do seu CSS --- */
-
-/* --- Substitua seu @media (max-width: 500px) por este --- */
 @media (max-width: 500px) {
 
   /* base */
@@ -833,7 +879,6 @@ p {
     display: block;
     margin: auto;
   }
-
     
   /* NAV */
  .menu-bar {
@@ -976,6 +1021,20 @@ p {
     padding: 0 10px;
   }
 
+  #r2{
+    margin-top: 20vh;
+  }
+
+  #c1{
+  margin: 5vh 0 11vh 0;
+  } 
+  #c2{
+  margin: 5vh 0 0 0;
+  } 
+  #c3{
+  margin: 5vh 0 12vh 0;
+  } 
+
   /* CARROSSEL */
   .carrossel {
     margin-top: 20px;
@@ -1008,6 +1067,3 @@ p {
   }
 
 }
-
-
-
